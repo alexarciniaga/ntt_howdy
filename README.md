@@ -13,12 +13,14 @@ Ensure that Sass is ported to style.css in root when building, that will be the 
 ## Build Instructions
 In the command line, navigate to the folder containing this project.
 
-install Gulp inline css
+Install Node Dependencies
 ---
     npm install --save-dev gulp-inline-css
 ---
 
-Run gulp to build index.html with inlined css. The file will be output to /build
+Run Gulp
 ---
     gulp
 ---
+
+ This will build the index.html with inlined css. The file will be output to /build
