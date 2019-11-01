@@ -10,8 +10,11 @@
     <!--[if (gte mso 9)|(IE)]>
         
     <![endif]-->
+    <meta class="mktoString" id="buttontext" mktoName="Button Text" default="Download the Report" mktoModuleScope="false">
+    <meta class="mktoString" id="buttonurl" mktoName="Button url" default="http://" mktoModuleScope="false">
+    <meta class="mktoString" id="emailtitle" mktoName="Email Title" default="NTT" mktoModuleScope="false">
     <!-- Left title element empty to prevent viewing this text in subject line on Android 4 email clients -->
-    <title></title>
+    <title>${emailtitle}</title>
 </head>
 <body>
     <table style="max-width:600px;margin:0 auto" cellpadding="0" cellspacing="0">
@@ -22,19 +25,19 @@
                         <td>
                             <table class="fullwidth section1bg" cellpadding="0" cellspacing="0" width="100%">
                                 <tr>
-                                    <td class="section1padding addwidth">
-                                        <img style="display:block" src="http://info.ragingwire.com/rs/265-FHK-559/images/logo-lockup.png" />
+                                    <td class="section1padding addwidth mktoimg" id="image1" mktoname="image">
+                                        <img style="display:block" src="http://na-ab10.marketo.com/rs/643-NSC-219/images/logo-lockup.png" />
                                     </td>
                                     <td class="section1padding addwidth">
-                                        <h4>RagingWire is now NTT Data Centers</h4>
+                                        <h4 class="mktoText" id="text1" mktoname="Header Text">RagingWire is now NTT Data Centers</h4>
                                     </td>
                                 </tr>
                             </table>
                         </td>
                     </tr>
                     <tr>
-                        <td class="addwidth">
-                            <img style="display:block" src="http://info.ragingwire.com/rs/265-FHK-559/images/howdy-hero.jpg">
+                        <td class="addwidth mktoimg" id="image2" mktoname="image">
+                            <img style="display:block" src="http://na-ab10.marketo.com/rs/643-NSC-219/images/howdy-hero.jpg">
                         </td>
                     </tr>
                 </table>
@@ -44,17 +47,17 @@
                             <table class="fullwidth" cellpadding="0" cellspacing="0" width="100%">
                                 <tr>
                                     <td class="addwidth" style="padding-top:48.5px;">
-                                        <h1>Low TCO. Robust Connectivity. Room to Grow.</h1>
+                                        <h1 class="mktoText" id="text2" mktoname="Text">Low TCO. Robust Connectivity. Room to Grow.</h1>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td class="addwidth" style="padding-top:24px;">
-                                        <p>Dallas has some of the lowest power rates in the country ($.03-$.06/kWh). It offers the most available inventory in the region (300+ MW). If you're considering exanding in the central region, there's a lot to like about Dallas. Download the Data Center Frontier market report to see why Dallas-Fort Worth is a great place to hang your hat (and your data center).</p>
+                                        <p class="mktoText" id="text3" mktoname="Text">Dallas has some of the lowest power rates in the country ($.03-$.06/kWh). It offers the most available inventory in the region (300+ MW). If you're considering exanding in the central region, there's a lot to like about Dallas. Download the Data Center Frontier market report to see why Dallas-Fort Worth is a great place to hang your hat (and your data center).</p>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="addwidth outlookcenter" style="padding-top:24px;">
-                                        <img src="http://info.ragingwire.com/rs/265-FHK-559/images/infographic.png">
+                                    <td class="addwidth outlookcenter mktoImg" style="padding-top:24px;" id="image3" mktoname="image">
+                                        <img src="http://na-ab10.marketo.com/rs/643-NSC-219/images/infographic.png">
                                     </td>
                                 </tr>
                                 <tr>
@@ -62,28 +65,32 @@
                                         &nbsp;
                                     </td>
                                 </tr>
-                                <tr>
-                                    <td class="outlookcenter">
-                                            <div><!--[if mso]>
-                                                <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://" style="height:48px;v-text-anchor:middle;width:435px;" arcsize="3%" strokecolor="#0033cc" fillcolor="#0033cc">
-                                                  <w:anchorlock/>
-                                                  <center style="color:#ffffff;font-family:sans-serif;font-size:13px;font-weight:bold;">Download the report</center>
-                                                </v:roundrect>
-                                              <![endif]--><a href="http://"
-                                              style="background-color:#0033cc;border:1px solid #0033cc;border-radius:1px;color:#ffffff;display:inline-block;font-family:sans-serif;font-size:13px;font-weight:bold;line-height:48px;text-align:center;text-decoration:none;width:435px;-webkit-text-size-adjust:none;mso-hide:all;">Download the report</a></div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="addwidth" style="padding-top:24px;">
-                                        <p>If you are ready to see our award winning data center in Dallas, schedule a tour today.</p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="addwidth" style="text-align: center;">
-                                        <p><a>Unsubscribe</a></p>
-                                    </td>
-                                </tr>
                             </table>
+                        </td>
+                    </tr>
+                </table>
+                <table class="fullwidth section3" cellpadding="0" cellspacing="0" width="100%">
+                    <tr>
+                        <td class="outlookcenter">
+                                <div><!--[if mso]>
+                                    <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="${buttonurl}" style="height:48px;v-text-anchor:middle;width:435px;" arcsize="3%" strokecolor="#0033cc" fillcolor="#0033cc">
+                                      <w:anchorlock/>
+                                      <center style="color:#ffffff;font-family:sans-serif;font-size:13px;font-weight:bold;">Download the report</center>
+                                    </v:roundrect>
+                                  <![endif]--><a href="${buttonurl}"
+                                  style="background-color:#0033cc;border:1px solid #0033cc;border-radius:1px;color:#ffffff;display:inline-block;font-family:sans-serif;font-size:13px;font-weight:bold;line-height:48px;text-align:center;text-decoration:none;width:435px;-webkit-text-size-adjust:none;mso-hide:all;">${buttontext}</a></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="addwidth" style="padding-top:24px;">
+                            <p class="mktoText" id="text4" mktoname="Text">If you are ready to see our award winning data center in Dallas, <a href="#">schedule a tour today.</a></p>
+                        </td>
+                    </tr>
+                </table>
+                <table width="100%" style="background-color:#f2f2f2">
+                    <tr>
+                        <td class="addwidth" style="text-align: center;">
+                            <p class="mktoText" id="text5" mktoname="Text">If you no longer wish to receive emails from us, <a href="{{system.unsubscribeLink}}">unsubscribe here</a></p>
                         </td>
                     </tr>
                 </table>
